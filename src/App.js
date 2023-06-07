@@ -6,7 +6,7 @@ function App() {
   const [data, setData] = useState([{}])
 
   useEffect(() => {
-    fetch("/members").then(
+    fetch("/api?route_id=100275&stop_id=2255").then(
       res => res.json()
     ).then(
       data => {
